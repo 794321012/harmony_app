@@ -1,0 +1,40 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "bg_gary",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "bg_gary_second",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "gary_second",
+      "value": "#666666"
+    },
+    {
+      "name": "primary",
+      "value": "#36d1a1"
+    },
+    {
+      "name": "shadow",
+      "value": "#240000"
+    },
+    {
+      "name": "black",
+      "value": "#000"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "gary",
+      "value": "#999999"
+    }
+  ]
+}
