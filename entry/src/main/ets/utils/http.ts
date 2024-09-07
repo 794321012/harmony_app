@@ -7,8 +7,8 @@ import axios, {
 } from '@ohos/axios'
 
 const ins: AxiosInstance = axios.create({
-  // baseURL: 'http://192.168.71.58:6060/',
-  baseURL: 'http://172.20.10.3:6060/',
+  baseURL: 'http://192.168.71.63:6060/',
+  // baseURL: 'http://172.20.10.3:6060/',
   timeout: 3000,
 })
 // 请求拦截器

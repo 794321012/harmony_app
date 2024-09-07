@@ -5,6 +5,7 @@ import { IRoomRecommend,
   ITagsItem, RoomRecommendDataSource } from '../../model/RoomRecommendData'
 import http,{IResponse} from '../../utils/http'
 import { rvp } from '../../utils/responsive'
+// import router from '@ohos.router'
 
 @Component
 export default struct RoomRecommend {
@@ -16,7 +17,6 @@ export default struct RoomRecommend {
   async getRoomRecommendList (){
     const ret:IResponse<IRoomRecommend> = await http({method:'get',url:'/house/nearbyHouses'})
     Array.isArray((ret?.data)) && this.List.setList(ret?.data)
-
   }
 
   build() {
