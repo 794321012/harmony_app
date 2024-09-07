@@ -1,8 +1,13 @@
 import { rvp } from '../../utils/responsive'
+import router from '@ohos.router'
 
 @Component
 export default struct SubTitle {
   @Prop title:string = ''
+
+  goRentRoomList(){
+    router.pushUrl({url:"pages/RentRoom/RentRoomList"})
+  }
   build() {
     Row(){
       Text(this.title).fontSize(rvp(16)).fontColor($r('app.color.black'))
@@ -18,5 +23,8 @@ export default struct SubTitle {
         .textAlign(TextAlign.End)
       Image($r('app.media.arrow_right')).width(rvp(4)).height(rvp(8))
     }.width('100%').height(rvp(44))
+    .onClick(() => {
+      this.goRentRoomList()
+    })
   }
 }
